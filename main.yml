@@ -1,0 +1,9 @@
+---
+- name: testing few modules
+  hosts: all
+  become: true
+  tasks:
+    - name: user creation
+      user:
+        name: prasanta
+        state: present
